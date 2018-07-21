@@ -15,6 +15,10 @@
 		BA05275D21034C680019E813 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA05275B21034C680019E813 /* LaunchScreen.storyboard */; };
 		BA05276821034C680019E813 /* MoneyTapAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA05276721034C680019E813 /* MoneyTapAssignmentTests.swift */; };
 		BA05277321034C680019E813 /* MoneyTapAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA05277221034C680019E813 /* MoneyTapAssignmentUITests.swift */; };
+		BA05278E210355990019E813 /* NetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA052787210355980019E813 /* NetworkCall.swift */; };
+		BA052791210355990019E813 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA05278B210355990019E813 /* Reachability.swift */; };
+		BA052794210357640019E813 /* ULReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA052793210357640019E813 /* ULReachability.swift */; };
+		BA0527992103F0380019E813 /* SearchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0527982103F0380019E813 /* SearchList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,11 @@
 		BA05276E21034C680019E813 /* MoneyTapAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyTapAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA05277221034C680019E813 /* MoneyTapAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTapAssignmentUITests.swift; sourceTree = "<group>"; };
 		BA05277421034C680019E813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA052787210355980019E813 /* NetworkCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkCall.swift; sourceTree = "<group>"; };
+		BA05278B210355990019E813 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		BA05278C210355990019E813 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		BA052793210357640019E813 /* ULReachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULReachability.swift; sourceTree = "<group>"; };
+		BA0527982103F0380019E813 /* SearchList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +108,9 @@
 		BA05274E21034C660019E813 /* MoneyTapAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				BA0527972103F0070019E813 /* Model */,
+				BA05278A210355990019E813 /* Reachability */,
+				BA052786210355980019E813 /* Webservice Manager */,
 				BA05274F21034C660019E813 /* AppDelegate.swift */,
 				BA05275121034C660019E813 /* ViewController.swift */,
 				BA05275321034C660019E813 /* Main.storyboard */,
@@ -126,6 +138,40 @@
 				BA05277421034C680019E813 /* Info.plist */,
 			);
 			path = MoneyTapAssignmentUITests;
+			sourceTree = "<group>";
+		};
+		BA052786210355980019E813 /* Webservice Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BA052787210355980019E813 /* NetworkCall.swift */,
+			);
+			path = "Webservice Manager";
+			sourceTree = "<group>";
+		};
+		BA05278A210355990019E813 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				BA05278B210355990019E813 /* Reachability.swift */,
+				BA05278C210355990019E813 /* Reachability.h */,
+				BA052792210357640019E813 /* ULReachability */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		BA052792210357640019E813 /* ULReachability */ = {
+			isa = PBXGroup;
+			children = (
+				BA052793210357640019E813 /* ULReachability.swift */,
+			);
+			path = ULReachability;
+			sourceTree = "<group>";
+		};
+		BA0527972103F0070019E813 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA0527982103F0380019E813 /* SearchList.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +305,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA052791210355990019E813 /* Reachability.swift in Sources */,
+				BA052794210357640019E813 /* ULReachability.swift in Sources */,
 				BA05275821034C660019E813 /* MoneyTapAssignment.xcdatamodeld in Sources */,
 				BA05275221034C660019E813 /* ViewController.swift in Sources */,
+				BA05278E210355990019E813 /* NetworkCall.swift in Sources */,
 				BA05275021034C660019E813 /* AppDelegate.swift in Sources */,
+				BA0527992103F0380019E813 /* SearchList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
