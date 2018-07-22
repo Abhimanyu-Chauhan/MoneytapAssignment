@@ -29,18 +29,34 @@ struct Thumbnail {
 
 
 struct Terms {
+    
     let description: NSArray?
+    
 }
 
 
 struct SearchListBase{
     
-    var searchListArray = NSMutableArray()
-    init(response: NSDictionary){
+    var searchListArray = [SearchList]()
+    var gpOffset: Int?
+    
+    init(response: NSDictionary, searchListArray: [SearchList]){
        
-        let query = response[2] as! NSDictionary
-        let pages = query["pages"] as! NSArray
-        
+        let con = response["continue"] as? NSDictionary
+        guard let continuteDict = con else{
+            return
+        }
+        gpOffset = continuteDict["gpsoffset"] as? Int
+        self.searchListArray = searchListArray
+        let queryDict = response["query"] as? NSDictionary
+        guard let query = queryDict else{
+            return
+        }
+        let pagesArray = query["pages"] as? NSArray
+        guard let pages = pagesArray else{
+            return
+        }
+        self.searchListArray.removeAll()
         for page in pages{
             
             let page = page as! NSDictionary
@@ -48,21 +64,26 @@ struct SearchListBase{
             let ns = page["ns"] as? Int
             let title = page["title"] as? String
             let index = page["index"] as? Int
-            let thumbnail = page["thumbnail"] as! NSDictionary
-            let terms = page["terms"] as! NSDictionary
+            let thumbnail = page["thumbnail"] as? NSDictionary
+            let terms = page["terms"] as? NSDictionary
             
-            let source = thumbnail["thumbnail"] as? String
-            let width = thumbnail["width"] as? Int
-            let height = thumbnail["height"] as? Int
+            var thumbnailObj: Thumbnail? = nil
+            if let thumbnail = thumbnail{
+                let source = thumbnail["source"] as? String
+                let width = thumbnail["width"] as? Int
+                let height = thumbnail["height"] as? Int
+                thumbnailObj = Thumbnail.init(source: source, width: width, height: height)
+            }
             
-            let thumbnailObj = Thumbnail.init(source: source, width: width, height: height)
-            
-            let description = terms["description"] as? NSArray
-            let termsObj = Terms.init(description: description)
+            var termsObj:Terms? = nil
+            if let terms = terms{
+                let description = terms["description"] as? NSArray
+                termsObj = Terms.init(description: description)
+            }
             
             let searchListObj = SearchList.init(pageId: pageId, ns: ns, title: title, index: index, thumbnail: thumbnailObj, terms: termsObj)
+            self.searchListArray.append(searchListObj)
             
-            searchListArray.add(searchListObj)
         }
     }
 }

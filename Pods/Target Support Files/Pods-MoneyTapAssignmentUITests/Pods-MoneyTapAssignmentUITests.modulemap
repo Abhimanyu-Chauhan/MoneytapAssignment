@@ -1,0 +1,6 @@
+framework module Pods_MoneyTapAssignmentUITests {
+  umbrella header "Pods-MoneyTapAssignmentUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

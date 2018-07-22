@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B17BFA91C5F35E6A2A7C134 /* Pods_MoneyTapAssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1792521513D26217A9A60B2 /* Pods_MoneyTapAssignmentUITests.framework */; };
+		7A7C0F19C0E7E65BE9C6FE00 /* Pods_MoneyTapAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D15D16F36084DB4E123D3B /* Pods_MoneyTapAssignmentTests.framework */; };
 		BA05275021034C660019E813 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA05274F21034C660019E813 /* AppDelegate.swift */; };
 		BA05275221034C660019E813 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA05275121034C660019E813 /* ViewController.swift */; };
 		BA05275521034C660019E813 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA05275321034C660019E813 /* Main.storyboard */; };
@@ -17,8 +19,12 @@
 		BA05277321034C680019E813 /* MoneyTapAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA05277221034C680019E813 /* MoneyTapAssignmentUITests.swift */; };
 		BA05278E210355990019E813 /* NetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA052787210355980019E813 /* NetworkCall.swift */; };
 		BA052791210355990019E813 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA05278B210355990019E813 /* Reachability.swift */; };
-		BA052794210357640019E813 /* ULReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA052793210357640019E813 /* ULReachability.swift */; };
 		BA0527992103F0380019E813 /* SearchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0527982103F0380019E813 /* SearchList.swift */; };
+		BA05279B210473AE0019E813 /* WikiResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA05279A210473AE0019E813 /* WikiResultVC.swift */; };
+		BA05279D210475DF0019E813 /* WikiResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA05279C210475DF0019E813 /* WikiResult.swift */; };
+		BA0527A1210486610019E813 /* SearchCelll.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0527A0210486610019E813 /* SearchCelll.swift */; };
+		BA0527A32104CB950019E813 /* MTReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0527A22104CB940019E813 /* MTReachability.swift */; };
+		CED0B7A57124C221768DCB74 /* Pods_MoneyTapAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C2D2726F37EEFD3E1E813C9 /* Pods_MoneyTapAssignment.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +45,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00F1DD6F2FF41F7187CE8307 /* Pods-MoneyTapAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyTapAssignmentTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyTapAssignmentTests/Pods-MoneyTapAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		42B6A178191D67EAF4065B22 /* Pods-MoneyTapAssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyTapAssignmentTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyTapAssignmentTests/Pods-MoneyTapAssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		5C2D2726F37EEFD3E1E813C9 /* Pods_MoneyTapAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyTapAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86D15D16F36084DB4E123D3B /* Pods_MoneyTapAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyTapAssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F547F60B1E97947AF55A2A9 /* Pods-MoneyTapAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyTapAssignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyTapAssignment/Pods-MoneyTapAssignment.release.xcconfig"; sourceTree = "<group>"; };
+		96569158413300D6B554151A /* Pods-MoneyTapAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyTapAssignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyTapAssignment/Pods-MoneyTapAssignment.debug.xcconfig"; sourceTree = "<group>"; };
+		A1792521513D26217A9A60B2 /* Pods_MoneyTapAssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyTapAssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA05274C21034C660019E813 /* MoneyTapAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyTapAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA05274F21034C660019E813 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA05275121034C660019E813 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,8 +69,13 @@
 		BA052787210355980019E813 /* NetworkCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkCall.swift; sourceTree = "<group>"; };
 		BA05278B210355990019E813 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		BA05278C210355990019E813 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		BA052793210357640019E813 /* ULReachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULReachability.swift; sourceTree = "<group>"; };
 		BA0527982103F0380019E813 /* SearchList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchList.swift; sourceTree = "<group>"; };
+		BA05279A210473AE0019E813 /* WikiResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiResultVC.swift; sourceTree = "<group>"; };
+		BA05279C210475DF0019E813 /* WikiResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiResult.swift; sourceTree = "<group>"; };
+		BA0527A0210486610019E813 /* SearchCelll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCelll.swift; sourceTree = "<group>"; };
+		BA0527A22104CB940019E813 /* MTReachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTReachability.swift; sourceTree = "<group>"; };
+		E53804B9D326CB0DE86A7FB9 /* Pods-MoneyTapAssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyTapAssignmentUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyTapAssignmentUITests/Pods-MoneyTapAssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E8EE36D67808F9D6E9E6219F /* Pods-MoneyTapAssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyTapAssignmentUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyTapAssignmentUITests/Pods-MoneyTapAssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED0B7A57124C221768DCB74 /* Pods_MoneyTapAssignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A7C0F19C0E7E65BE9C6FE00 /* Pods_MoneyTapAssignmentTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,12 +99,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B17BFA91C5F35E6A2A7C134 /* Pods_MoneyTapAssignmentUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B48CC99A9B9EF49D30EAFD1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96569158413300D6B554151A /* Pods-MoneyTapAssignment.debug.xcconfig */,
+				8F547F60B1E97947AF55A2A9 /* Pods-MoneyTapAssignment.release.xcconfig */,
+				00F1DD6F2FF41F7187CE8307 /* Pods-MoneyTapAssignmentTests.debug.xcconfig */,
+				42B6A178191D67EAF4065B22 /* Pods-MoneyTapAssignmentTests.release.xcconfig */,
+				E8EE36D67808F9D6E9E6219F /* Pods-MoneyTapAssignmentUITests.debug.xcconfig */,
+				E53804B9D326CB0DE86A7FB9 /* Pods-MoneyTapAssignmentUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A6F3E3A60AC4742477587D03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C2D2726F37EEFD3E1E813C9 /* Pods_MoneyTapAssignment.framework */,
+				86D15D16F36084DB4E123D3B /* Pods_MoneyTapAssignmentTests.framework */,
+				A1792521513D26217A9A60B2 /* Pods_MoneyTapAssignmentUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BA05274321034C660019E813 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +136,8 @@
 				BA05276621034C680019E813 /* MoneyTapAssignmentTests */,
 				BA05277121034C680019E813 /* MoneyTapAssignmentUITests */,
 				BA05274D21034C660019E813 /* Products */,
+				6B48CC99A9B9EF49D30EAFD1 /* Pods */,
+				A6F3E3A60AC4742477587D03 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,11 +154,12 @@
 		BA05274E21034C660019E813 /* MoneyTapAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				BA05279F210486070019E813 /* Cell */,
+				BA05279E210485FC0019E813 /* ViewControllers */,
 				BA0527972103F0070019E813 /* Model */,
 				BA05278A210355990019E813 /* Reachability */,
 				BA052786210355980019E813 /* Webservice Manager */,
 				BA05274F21034C660019E813 /* AppDelegate.swift */,
-				BA05275121034C660019E813 /* ViewController.swift */,
 				BA05275321034C660019E813 /* Main.storyboard */,
 				BA05275921034C680019E813 /* Assets.xcassets */,
 				BA05275B21034C680019E813 /* LaunchScreen.storyboard */,
@@ -151,27 +198,37 @@
 		BA05278A210355990019E813 /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
+				BA0527A22104CB940019E813 /* MTReachability.swift */,
 				BA05278B210355990019E813 /* Reachability.swift */,
 				BA05278C210355990019E813 /* Reachability.h */,
-				BA052792210357640019E813 /* ULReachability */,
 			);
 			path = Reachability;
-			sourceTree = "<group>";
-		};
-		BA052792210357640019E813 /* ULReachability */ = {
-			isa = PBXGroup;
-			children = (
-				BA052793210357640019E813 /* ULReachability.swift */,
-			);
-			path = ULReachability;
 			sourceTree = "<group>";
 		};
 		BA0527972103F0070019E813 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				BA0527982103F0380019E813 /* SearchList.swift */,
+				BA05279C210475DF0019E813 /* WikiResult.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		BA05279E210485FC0019E813 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BA05275121034C660019E813 /* ViewController.swift */,
+				BA05279A210473AE0019E813 /* WikiResultVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BA05279F210486070019E813 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BA0527A0210486610019E813 /* SearchCelll.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,9 +238,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA05277721034C680019E813 /* Build configuration list for PBXNativeTarget "MoneyTapAssignment" */;
 			buildPhases = (
+				53516A19D419B46904808782 /* [CP] Check Pods Manifest.lock */,
 				BA05274821034C660019E813 /* Sources */,
 				BA05274921034C660019E813 /* Frameworks */,
 				BA05274A21034C660019E813 /* Resources */,
+				8CCD0FF0DC581FDE38752D42 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -198,6 +257,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA05277A21034C680019E813 /* Build configuration list for PBXNativeTarget "MoneyTapAssignmentTests" */;
 			buildPhases = (
+				8CF722E2801EEA74BF2BA5BC /* [CP] Check Pods Manifest.lock */,
 				BA05275F21034C680019E813 /* Sources */,
 				BA05276021034C680019E813 /* Frameworks */,
 				BA05276121034C680019E813 /* Resources */,
@@ -216,6 +276,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA05277D21034C680019E813 /* Build configuration list for PBXNativeTarget "MoneyTapAssignmentUITests" */;
 			buildPhases = (
+				D93D2BAE26CA848786384273 /* [CP] Check Pods Manifest.lock */,
 				BA05276A21034C680019E813 /* Sources */,
 				BA05276B21034C680019E813 /* Frameworks */,
 				BA05276C21034C680019E813 /* Resources */,
@@ -300,18 +361,96 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		53516A19D419B46904808782 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoneyTapAssignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CCD0FF0DC581FDE38752D42 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MoneyTapAssignment/Pods-MoneyTapAssignment-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoneyTapAssignment/Pods-MoneyTapAssignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CF722E2801EEA74BF2BA5BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoneyTapAssignmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D93D2BAE26CA848786384273 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoneyTapAssignmentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BA05274821034C660019E813 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BA052791210355990019E813 /* Reachability.swift in Sources */,
-				BA052794210357640019E813 /* ULReachability.swift in Sources */,
+				BA05279B210473AE0019E813 /* WikiResultVC.swift in Sources */,
 				BA05275821034C660019E813 /* MoneyTapAssignment.xcdatamodeld in Sources */,
 				BA05275221034C660019E813 /* ViewController.swift in Sources */,
 				BA05278E210355990019E813 /* NetworkCall.swift in Sources */,
+				BA0527A32104CB950019E813 /* MTReachability.swift in Sources */,
 				BA05275021034C660019E813 /* AppDelegate.swift in Sources */,
+				BA0527A1210486610019E813 /* SearchCelll.swift in Sources */,
 				BA0527992103F0380019E813 /* SearchList.swift in Sources */,
+				BA05279D210475DF0019E813 /* WikiResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +621,7 @@
 		};
 		BA05277821034C680019E813 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96569158413300D6B554151A /* Pods-MoneyTapAssignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +639,7 @@
 		};
 		BA05277921034C680019E813 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F547F60B1E97947AF55A2A9 /* Pods-MoneyTapAssignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -516,6 +657,7 @@
 		};
 		BA05277B21034C680019E813 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00F1DD6F2FF41F7187CE8307 /* Pods-MoneyTapAssignmentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -536,6 +678,7 @@
 		};
 		BA05277C21034C680019E813 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42B6A178191D67EAF4065B22 /* Pods-MoneyTapAssignmentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -556,6 +699,7 @@
 		};
 		BA05277E21034C680019E813 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8EE36D67808F9D6E9E6219F /* Pods-MoneyTapAssignmentUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -575,6 +719,7 @@
 		};
 		BA05277F21034C680019E813 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E53804B9D326CB0DE86A7FB9 /* Pods-MoneyTapAssignmentUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

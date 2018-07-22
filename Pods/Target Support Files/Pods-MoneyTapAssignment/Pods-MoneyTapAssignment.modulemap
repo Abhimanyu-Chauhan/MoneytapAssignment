@@ -1,0 +1,6 @@
+framework module Pods_MoneyTapAssignment {
+  umbrella header "Pods-MoneyTapAssignment-umbrella.h"
+
+  export *
+  module * { export * }
+}
